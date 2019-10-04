@@ -2,9 +2,10 @@
   "name": "@theunderscorer/utils",
   "version": "1.0.0",
   "description": "Utils for my various projects.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "jest --runInBand"
+    "test": "jest --runInBand",
+    "build": "tsc"
   },
   "jest": {
     "collectCoverageFrom": [
