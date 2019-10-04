@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  *  Builds reducer basing on provided handlers (that are connected to action types) and initial state
  * */
@@ -10,5 +12,5 @@ const reducer = (handlers, initialState) => (state = initialState, action) => {
     }
     return handlers[action.type](state, action.payload);
 };
-export default reducer;
+exports.default = reducer;
 //# sourceMappingURL=index.js.map
