@@ -1,0 +1,41 @@
+{
+  "name": "@theunderscorer/utils",
+  "version": "1.0.0",
+  "description": "Utils for my various projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --runInBand"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.ts",
+      "!src/**/index.ts"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
+  },
+  "keywords": [
+    "utils",
+    "utility",
+    "helpers"
+  ],
+  "author": "Przemysław Żydek",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.3"
+  }
+}
