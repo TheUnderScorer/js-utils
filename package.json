@@ -3,6 +3,7 @@
   "version": "1.1.0",
   "description": "Utils for my various projects.",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/TheUnderScorer/js-utils.git"
