@@ -1,16 +1,22 @@
 {
-  "parser": "@typescript-eslint/parser",
-  "extends": [
-    "plugin:@typescript-eslint/recommended"
-  ],
-  "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module"
+  "root": true,
+  "env": {
+    "jest": true,
+    "browser": true
   },
+  "plugins": ["jest"],
+  "extends": [
+    "xo",
+    "xo-typescript",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint"
+  ],
   "rules": {
-    "@typescript-eslint/explicit-function-return-type": 0,
-    "@typescript-eslint/no-inferrable-types": 0,
-    "@typescript-eslint/no-explicit-any": 0,
-    "@typescript-eslint/interface-name-prefix": 0
+    // Enabled by `xo`
+    "valid-jsdoc": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "capitalized-comments": "off",
+    "@typescript-eslint/member-naming": "off",
+    "new-cap": "off",
   }
 }

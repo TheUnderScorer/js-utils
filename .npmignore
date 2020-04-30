@@ -1,0 +1,5 @@
+/src
+.gitignore
+.eslintrc
+.travis.yml
+tsconfig.json
