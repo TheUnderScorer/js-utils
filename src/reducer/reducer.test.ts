@@ -1,6 +1,7 @@
 import { ReducerMap } from './types';
 import { mapReducer } from './reducer';
 import { Action } from './actions/types';
+import { defaultHandler } from './handlers';
 
 interface MockState {
   version: string;
@@ -10,10 +11,7 @@ interface MockState {
 type MockActions = Action<'SetVersion', string> | Action<'SetTest', boolean>;
 
 const handlers: ReducerMap<MockState, MockActions> = {
-  SetTest: (state, isTest) => ({
-    ...state,
-    isTest,
-  }),
+  SetTest: defaultHandler<MockState, MockActions>('isTest'),
   SetVersion: (state, version) => ({
     ...state,
     version,
