@@ -1,5 +1,11 @@
-/src
-.gitignore
-.eslintrc
-.travis.yml
+src
+node_modules
+.cache
+tsconfig.build.json
 tsconfig.json
+
+package-lock.json
+yarn.lock
+tsconfig.json
+.gitignore
+.git
