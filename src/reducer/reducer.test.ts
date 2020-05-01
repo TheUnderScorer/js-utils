@@ -31,7 +31,7 @@ describe('Map reducer', () => {
   it('Should return state if no actions is passed', () => {
     const result = mapReducer(handlers, state);
 
-    expect(result(state, {} as any)).toEqual(state);
+    expect(result(state)).toEqual(state);
   });
 
   it('SetTest action', () => {
@@ -54,5 +54,14 @@ describe('Map reducer', () => {
     const newStore = result(state, action);
 
     expect(newStore.version).toEqual(action.payload);
+  });
+
+  it('should return state if invalid action was provided', () => {
+    const result = mapReducer(handlers, state);
+    const newStore = result(state, {
+      type: 'invalidaction',
+    } as any);
+
+    expect(newStore).toEqual(state);
   });
 });

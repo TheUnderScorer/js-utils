@@ -17,8 +17,9 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.ts",
-      "!src/**/index.ts"
+      "**/src/**/*.ts",
+      "!**/src/**/index.ts",
+      "!**/src/**/types.ts"
     ],
     "testMatch": [
       "**/src/**/*.test.ts"
