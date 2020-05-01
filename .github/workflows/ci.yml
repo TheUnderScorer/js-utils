@@ -62,6 +62,6 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish package
-        run: npm run version && npm publish
+        run: npm run version && git push origin master --follow-tags && npm publish
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
