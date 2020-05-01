@@ -11,3 +11,5 @@ export type ReducerMap<State, ActionType> = ActionType extends Action<
 >
   ? { [Key in Type]: ReducerHandler<State, Payload> }
   : never;
+
+export type ReducerBuilder<State, ActionType> = {};

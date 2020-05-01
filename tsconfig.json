@@ -13,9 +13,5 @@
   "include": [
     "src/**/*",
     "index.ts"
-  ],
-  "exclude": [
-    "src/**/*.spec.ts",
-    "src/**/*.test.ts"
   ]
 }

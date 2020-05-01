@@ -11,6 +11,9 @@
     "plugin:prettier/recommended",
     "prettier/@typescript-eslint"
   ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
   "rules": {
     // Enabled by `xo`
     "valid-jsdoc": "off",
@@ -18,5 +21,7 @@
     "capitalized-comments": "off",
     "@typescript-eslint/member-naming": "off",
     "new-cap": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/prefer-readonly-parameter-types": "off"
   }
 }
