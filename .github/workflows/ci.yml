@@ -21,11 +21,6 @@ jobs:
       - name: Tests
         run: npm run test --ci --coverage
 
-      - name: Coveralls
-        uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-
   release:
     needs: test
     name: Publish
